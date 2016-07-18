@@ -1,0 +1,12 @@
+#container {
+  width: 25%;
+  border-radius: 5px;
+  padding: 50px;
+  background-color: #dddddd;
+  margin: 10% auto;
+  text-align: center;
+}
+
+#hangman {
+  margin-top: 25px;
+}
