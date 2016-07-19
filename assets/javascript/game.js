@@ -4,8 +4,9 @@ var wins = 0;
 var losses =0;
 var guessesLeft = 10;
 var computerGuess = generateRandomComputerGuess();
-document.getElementById('wins').innerHTML = ('wins: ' + wins);
-document.getElementById('losses').innerHTML = ('losses: ' + losses);
+
+document.getElementById('wins').innerHTML = ('Wins: ' + wins);
+document.getElementById('losses').innerHTML = ('Losses: ' + losses);
 document.getElementById('guessesLeft').innerHTML = ('Guesses Left: ' + guessesLeft);
 
 document.onkeyup = function(keyEvent) {
@@ -15,20 +16,17 @@ if (userGuess == computerGuess) {
   wins++;
   computerGuess = generateRandomComputerGuess();
   guessesLeft--;
-  document.getElementById('wins').innerHTML = ('wins: ' + wins);
+  document.getElementById('wins').innerHTML = ('Wins: ' + wins);
   // document.getElementById('losses').innerHTML = ('losses: ' + losses);
   document.getElementById('guessesLeft').innerHTML = ('Guesses Left: ' + guessesLeft);
-
-
     }
      else {
        losses++;
        guessesLeft--;
-       document.getElementById('losses').innerHTML = ('losses: ' + losses);
+       document.getElementById('losses').innerHTML = ('Losses: ' + losses);
        document.getElementById('guessesLeft').innerHTML = ('Guesses Left: ' + guessesLeft);
 
-
-         }
+      }
 
     if (guessesLeft == 0){
       document.getElementById('guessesLeft').innerHTML = ('Guesses Left: ' + guessesLeft);
